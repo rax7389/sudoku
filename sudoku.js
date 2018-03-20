@@ -387,7 +387,7 @@ $(document).ready(function(){
 	});
 	$("#cell-74").keyup(function(){
 		check_row(74,"#cell-74");
-		check_col(0,71,"#cell-74");
+		check_col(2,74,"#cell-74");
 		check_block(54,"#cell-74");
 	});
 	$("#cell-75").keyup(function(){
@@ -514,7 +514,13 @@ $(document).ready(function(){
 	$("input").keyup(function(){
 		if($(this).val()==0){
 			$(this).val('');
+		} 
+		if($(this).val()>='A' && $(this).val()<='Z'){
+			$(this).val('');
 		}
+		if($(this).val()>='a' && $(this).val()<='z'){
+			$(this).val('');
+		} 
 	});
 
 });
